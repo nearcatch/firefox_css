@@ -1,0 +1,9 @@
+@-moz-document url('moz-extension://92d2cbae-768f-469d-b49e-dd4852839ff1/reader.html') {
+div.itemlinks > a.share,
+div.itemlinks > a.delete-entry {
+	display: none;
+}
+div#dragbar2 {
+	border-color: transparent;
+}
+}

@@ -1,0 +1,9 @@
+@import url("imports/menuitem_styles_country-flags-and-ip-whois.css");
+/*#contentAreaContextMenu menu[label="Flagfox"], /* Flagfox */
+#contentAreaContextMenu menu[label="Firefox Multi-Account Containers"], /* Firefox Multi-Account Containers */
+#contentAreaContextMenu menuitem[label="Download with JDownloader"], /* JDownloader */
+#contentAreaContextMenu menuitem#screenshots_mozilla_org-menuitem-_create-screenshot, /* default screenshot */
+#contentAreaContextMenu menuitem[label="Save selected links"], /* Singlefile */
+#contentAreaContextMenu menuitem[label="Set temporary title"] /* Tab Retitle */ {
+	display: none !important;
+}

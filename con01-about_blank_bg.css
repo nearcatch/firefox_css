@@ -1,0 +1,8 @@
+BODY:empty, /* affects about:blank */
+#browser vbox#appcontent tabbrowser, /* affects blank background for video pages */
+/*#content,*/
+#tabbrowser-tabpanels/*, /* affects blank background for image pages */
+/*browser[type=content-primary],
+browser[type=content]>html*/ {
+    background: url("chrome://global/skin/media/imagedoc-darknoise.png") !important;
+}

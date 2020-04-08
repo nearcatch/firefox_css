@@ -1,0 +1,175 @@
+/* https://github.com/M1ch431/FirefoxW10ContextMenus/tree/compact */
+/* Colors */
+
+@media (prefers-color-scheme: dark)
+{
+	:root
+	{
+		--context-background: #2b2b2b;
+		--context-border: #a0a0a0;
+		--context-disabled: #6d6d6d;
+		--context-front: #ffffff;
+		--context-hover: #414141;
+		--context-separator: #808080;
+	}
+}
+
+@media (prefers-color-scheme: light)
+{
+	:root
+	{
+		--context-background: #eeeeee; /* Was #f2f2f2 in 1809 */
+		--context-border: #a0a0a0;
+		--context-disabled: #6d6d6d;
+		--context-front: #000000;
+		--context-hover: #ffffff; /* Was #d9d9d9 in 1809 */
+		--context-separator: #919191;
+	}
+}
+
+/* Base */
+
+#eom-button menupopup,
+#styloaix-button menupopup,
+#userChromebtnMenu menupopup
+{
+	-moz-appearance: none !important;
+	background-color: var(--context-background) !important;
+	border: 1px solid var(--context-border) !important;
+	padding: 2px 2px 2px 2px !important;
+	margin: 0px 0px 0px 0px !important;
+	min-width: 191px !important;
+}
+
+#eom-button > menupopup :-moz-any(menuitem, menu),
+#styloaix-button > menupopup :-moz-any(menuitem, menu),
+#userChromebtnMenu > menupopup :-moz-any(menuitem, menu)
+{
+	-moz-appearance: none !important;
+	color: var(--context-front) !important;
+	padding: 0px 0px 2px 0px !important;
+	min-height: 22px !important;
+}
+
+/*#back-button > menupopup menugroup
+{
+	padding: 0px !important;
+	background-color: transparent !important;
+}*/
+
+#eom-button > menupopup menuseparator,
+#styloaix-button > menupopup menuseparator,
+#userChromebtnMenu > menupopup menuseparator
+{
+	-moz-appearance: none !important;
+	margin: 2px 8px 2px 8px !important;
+	padding: 0 !important;
+	border-top: 1px solid var(--context-separator) !important;
+	border-bottom: none !important;
+}
+
+/* Checkbox and Radio Items */
+
+#eom-button menuitem[type="checkbox"],
+#styloaix-button menuitem[type="checkbox"],
+#userChromebtnMenu menuitem[type="checkbox"]
+{
+	-moz-appearance: none !important;
+}
+
+#eom-button menuitem[checked="true"][type="checkbox"] > .menu-iconic-left,
+#styloaix-button menuitem[checked="true"][type="checkbox"] > .menu-iconic-left,
+#userChromebtnMenu menuitem[checked="true"][type="checkbox"] > .menu-iconic-left
+{
+	-moz-appearance: none !important;
+	padding: 7px 0px 0px 0px !important;
+	margin-left: 7px !important;
+	margin-right: -7px !important;
+	border: solid var(--context-front);
+	border-width: 0px 0px 2px 2px;
+	transform: rotate(-45deg) scale(.75);
+}
+
+/*#back-button menuitem[type="radio"]
+{
+	-moz-appearance: none !important;
+}
+
+#back-button menuitem[checked="true"][type="radio"] > .menu-iconic-left
+{
+	-moz-appearance: none !important;
+	border: solid var(--context-front);
+	height: 17px !important;
+	border-radius: 100%;
+	background: var(--context-front);
+	margin-left: 7px !important;
+	margin-right: -7px !important;
+	margin-top: 1px !important;
+	padding: 1px !important;
+	transform: scale(0.5);
+}*/
+
+#eom-button menuitem[type="checkbox"] > .menu-iconic-text,
+#styloaix-button menuitem[type="checkbox"] > .menu-iconic-text,
+#userChromebtnMenu menuitem[type="checkbox"] > .menu-iconic-text
+{
+	margin-left: 15px !important;
+	-moz-appearance: none !important;
+}
+
+/*#back-button menuitem[type="radio"] > .menu-iconic-text
+{
+	padding-left: 13px !important;
+	-moz-appearance: none !important;
+}*/
+
+/* Disabled */
+
+#eom-button > menupopup :-moz-any(menuitem, menu)[disabled="true"],
+#styloaix-button > menupopup :-moz-any(menuitem, menu)[disabled="true"],
+#userChromebtnMenu > menupopup :-moz-any(menuitem, menu)[disabled="true"]
+{
+	-moz-appearance: none !important;
+	color: var(--context-disabled) !important;
+}
+
+#eom-button > menupopup :-moz-any(menuitem, menu)[disabled="true"]:hover
+#styloaix-button > menupopup :-moz-any(menuitem, menu)[disabled="true"]:hover
+#userChromebtnMenu > menupopup :-moz-any(menuitem, menu)[disabled="true"]:hover
+{
+	-moz-appearance: none !important;
+	background-color: transparent !important;
+}
+
+/* Hover */
+
+#eom-button > menupopup :-moz-any(menu, menuitem):-moz-any(:hover, [_moz-menuactive="true"]):not([disabled="true"]),
+#styloaix-button > menupopup :-moz-any(menu, menuitem):-moz-any(:hover, [_moz-menuactive="true"]):not([disabled="true"]),
+#userChromebtnMenu > menupopup :-moz-any(menu, menuitem):-moz-any(:hover, [_moz-menuactive="true"]):not([disabled="true"])
+{
+	-moz-appearance: none !important;
+	background-color: var(--context-hover) !important;
+}
+
+/* Icons */
+
+#eom-button menuitem > .menu-iconic-left,
+#styloaix-button menuitem > .menu-iconic-left,
+#userChromebtnMenu menuitem > .menu-iconic-left
+{
+	-moz-appearance: none !important;
+	padding: 0px 6px 0px 8px !important;
+}
+
+#eom-button > menupopup .menu-right,
+#styloaix-button > menupopup .menu-right,
+#userChromebtnMenu > menupopup .menu-right
+{
+	-moz-appearance: none !important;
+	margin-right: 6px !important;
+	padding: 7.5px !important;
+	color: var(--context-front) !important;
+	border: solid var(--context-front);
+	border-width: 0px 2px 2px 0px;
+	transform: rotate(-45deg) scale(.55);
+}

@@ -1,0 +1,20 @@
+@-moz-document url("chrome://global/content/alerts/alert.xhtml") {
+	#alertBox {
+		border-color: rgba(107,107,107,.3) !important;
+		background: /*rgba(33,33,33,.9)*/ url("chrome://global/skin/media/imagedoc-darknoise.png") !important;
+		color: rgba(215,215,215,.9) !important;
+		backdrop-filter: blur(32px) !important;
+	}
+	#alertSettings {
+		-moz-context-properties: fill, fill-opacity !important;
+		padding: 3px !important;
+		margin: 0px 2px -3px 0px !important;
+		color: inherit !important;
+		border-radius: 2px !important;
+		transform: scale(0.91, 0.91) !important;
+	}
+	#alertSettings:hover,
+	#alertSettings[open] {
+		background-color: rgba(215, 215, 215, 0.1) !important;
+	}
+}

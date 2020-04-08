@@ -1,0 +1,3 @@
+#main-window #statuspanel[type=overLink] {
+        display: none !important;
+    }

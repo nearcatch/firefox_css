@@ -1,0 +1,25 @@
+/*.pictureInPictureToggleIcon,*/
+.pictureInPictureToggleLabel {
+    display: none !important;
+}
+.pictureInPictureToggleButton {
+    top: 0% !important;
+    left: 0%;
+    transform: translateY(50%);
+}
+.pictureInPictureToggleButton:hover {
+    cursor: pointer;
+}
+.pictureInPictureToggleButton:not(:hover) {
+    background-color: black !important;
+    opacity: 0.2 !important;
+	transition: all 250ms !important;
+}
+div.videocontrols:not(:hover) .pictureInPictureToggleButton {
+    opacity: 0 !important;
+}
+@-moz-document url("chrome://global/content/pictureinpicture/player.xhtml") {
+	button#close {
+		display: none;
+	}
+}

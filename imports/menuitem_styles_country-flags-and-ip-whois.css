@@ -1,0 +1,120 @@
+menuitem[id$="_-menuitem-_what-is-my-ip"]::before,
+menuitem[id$="_-menuitem-_http-headers"]::before,
+menuitem[id$="_-menuitem-_googletranslate"]::before,
+menuitem[id$="_-menuitem-_googlecache"]::before,
+menuitem[id$="_-menuitem-_archive"]::before,
+menu[id*="_-menuitem-"][label="Other services"]::before,
+menuitem[id$="_-menuitem-_what-is-my-ua"]::before,
+menuitem[id$="_-menuitem-_ssl-checker"]::before,
+menuitem[id$="_-menuitem-_trace-route"]::before,
+menuitem[id$="_-menuitem-_ping"]::before,
+menuitem[id$="_-menuitem-_tinyurl"]::before,
+menuitem[id$="_-menuitem-_dns-lookup"]::before,
+menuitem[id$="_-menuitem-_whois-lookup"]::before,
+menuitem[id$="_-menuitem-_alexa"]::before,
+menuitem[id$="_-menuitem-_wot"]::before,
+menuitem[id$="_-menuitem-_virustotal"]::before,
+menuitem[id$="_-menuitem-_isitdownrightnow"]::before,
+menuitem[id$="_-menuitem-_wikipediadomain"]::before,
+menuitem[id$="_-menuitem-_intodns"]::before,
+menuitem[id$="_-menuitem-_netcraft"]::before,
+menuitem[id$="_-menuitem-_webaim"]::before,
+menuitem[id$="_-menuitem-_nuvalidator"]::before,
+menuitem[id$="_-menuitem-_css-validator"]::before,
+menuitem[id$="_-menuitem-_w3c-validator"]::before,
+menuitem[id$="_-menuitem-_google"]::before,
+menuitem[id$="_-menuitem-_wolframalpha"]::before,
+menuitem[id$="_-menuitem-_copy-ip"]::before {
+	content: "";
+	display: flex;
+	margin: 0px -24px -2px 8px;
+	height: 16px;
+	width: 16px;
+	background-size: contain !important;
+    filter: drop-shadow(0 0 1px rgba(255,255,255,0.35));
+}
+menuitem[id$="_-menuitem-_what-is-my-ip"]::before {
+	background: url("cfaiw_images/what-is-my-ip.png");
+}
+menuitem[id$="_-menuitem-_http-headers"]::before {
+	background: url("cfaiw_images/http-headers.ico");
+}
+menuitem[id$="_-menuitem-_googletranslate"]::before {
+    background: url("cfaiw_images/googletranslate.ico");
+}
+menuitem[id$="_-menuitem-_googlecache"]::before {
+	background: url("cfaiw_images/googlecache.ico");
+}
+menuitem[id$="_-menuitem-_archive"]::before {
+	background: url("cfaiw_images/archive.ico");
+}
+menu[id*="_-menuitem-"][label="Other services"]::before {
+	background: url("cfaiw_images/cfaiw.png");
+}
+menuitem[id$="_-menuitem-_what-is-my-ua"]::before {
+	background: url("cfaiw_images/what-is-my-ua.png");
+}
+menuitem[id$="_-menuitem-_ssl-checker"]::before {
+	background: url("cfaiw_images/ssl-checker.ico");
+}
+menuitem[id$="_-menuitem-_trace-route"]::before {
+	background: url("cfaiw_images/trace-route.ico");
+}
+menuitem[id$="_-menuitem-_ping"]::before {
+	background: url("cfaiw_images/ping.ico");
+}
+menuitem[id$="_-menuitem-_tinyurl"]::before {
+	background: url("cfaiw_images/tinyurl.gif");
+}
+menuitem[id$="_-menuitem-_dns-lookup"]::before {
+	background: url("cfaiw_images/dns-lookup.ico");
+}
+menuitem[id$="_-menuitem-_whois-lookup"]::before {
+	background: url("cfaiw_images/whois-lookup.ico");
+}
+menuitem[id$="_-menuitem-_alexa"]::before {
+	background: url("cfaiw_images/alexa.ico");
+}
+menuitem[id$="_-menuitem-_wot"]::before {
+	background: url("cfaiw_images/wot.ico");
+}
+menuitem[id$="_-menuitem-_virustotal"]::before {
+	background: url("cfaiw_images/virustotal.png");
+}
+menuitem[id$="_-menuitem-_isitdownrightnow"]::before {
+	background: url("cfaiw_images/isitdownrightnow.ico");
+}
+menuitem[id$="_-menuitem-_wikipediadomain"]::before {
+	background: url("cfaiw_images/wikipediadomain.ico");
+}
+menuitem[id$="_-menuitem-_intodns"]::before {
+	background: url("cfaiw_images/intodns.ico");
+}
+menuitem[id$="_-menuitem-_netcraft"]::before {
+	background: url("cfaiw_images/netcraft.png");
+}
+menuitem[id$="_-menuitem-_webaim"]::before {
+	background: url("cfaiw_images/webaim.ico");
+}
+/*menuitem[id$="_-menuitem-_nuvalidator"]::before {
+	background: url("cfaiw_images/nuvalidator.png");
+}*/
+menuitem[id$="_-menuitem-_css-validator"]::before {
+	background: url("cfaiw_images/css-validator.ico");
+}
+menuitem[id$="_-menuitem-_w3c-validator"]::before {
+	background: url("cfaiw_images/w3c-validator.png");
+}
+menuitem[id$="_-menuitem-_google"]::before {
+	background: url("cfaiw_images/google.ico");
+}
+menuitem[id$="_-menuitem-_wolframalpha"]::before {
+	background: url("cfaiw_images/wolframalpha.ico");
+}
+menuitem[id$="_-menuitem-_copy-ip"]::before {
+	background: url("cfaiw_images/copy-ip.svg");
+}
+
+menuitem[id$="_-menuitem-_nuvalidator"] {
+	display: none;
+}

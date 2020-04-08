@@ -1,0 +1,106 @@
+/* https://www.reddit.com/r/FirefoxCSS/comments/ep8r6j/side_tabs_on_hover_using_sidebery_addon/fhblk1c/ */
+:root {
+    --uc-window-drag-space-width: 4px;   /* Extra space reserved on both sides of the nav-bar to be able to drag the window */
+    --uc-toolbar-height: 32px;           /* variable also used in hide_titlebar.css */
+    --uc-window-control-width: 134px;    /* Space reserved for window controls */
+}
+:root:not([uidensity="compact"]) {
+    --uc-toolbar-height: 38px;
+    --uc-window-control-width: 142px;    /* Space reserved for window controls */
+}
+
+/*:root:not([inFullscreen])[tabsintitlebar="true"]:not([extradragspace="true"]) #nav-bar::before,
+:root:not([inFullscreen])[tabsintitlebar="true"]:not([extradragspace="true"]) #nav-bar::after {
+    content: "";
+    display: inline-block;
+    width: var(--uc-window-drag-space-width);
+}
+
+:root:not([inFullscreen])[tabsintitlebar="true"]:not([extradragspace="true"]) toolbar#nav-bar::after {
+    width: calc(var(--uc-window-control-width) + var(--uc-window-drag-space-width, 0px));
+}*//* comment out for MinMaxClose button */
+
+:root:not([inFullscreen])[tabsintitlebar="true"]:not([extradragspace="true"]) #TabsToolbar {
+    visibility: collapse !important;
+}
+
+:root:not([inFullscreen])[tabsintitlebar="true"]:not([extradragspace="true"]) #nav-bar {
+    margin-top: calc(0px - var(--uc-toolbar-height));
+}
+
+:root:not([inFullscreen])[tabsintitlebar="true"][sizemode="normal"]:not([extradragspace="true"]) #nav-bar {
+    margin-top: calc(0px - var(--uc-toolbar-height));
+}
+
+:root:not([inFullscreen])[tabsintitlebar="true"]:not([extradragspace="true"]) #toolbar-menubar {
+    min-height: unset !important;
+    height: var(--uc-toolbar-height) !important;
+    position: relative;
+}
+
+:root:not([inFullscreen])[tabsintitlebar="true"]:not([extradragspace="true"]) #main-menubar {
+    -moz-box-flex: 1;
+    background-color: var(--toolbar-bgcolor, --toolbar-non-lwt-bgcolor);
+    background-clip: padding-box;
+    border-image: linear-gradient(to left, transparent, var(--toolbar-bgcolor, --toolbar-non-lwt-bgcolor) 30px) 20 / 30px;
+}
+
+:root:not([inFullscreen])[tabsintitlebar="true"]:not([extradragspace="true"]) #toolbar-menubar:not([inactive]) {
+    z-index: 2;
+}
+:root:not([inFullscreen])[tabsintitlebar="true"]:not([extradragspace="true"]) #toolbar-menubar[inactive] > #menubar-items {
+    opacity: 0;
+    pointer-events: none;
+    margin-left: var(--uc-window-drag-space-width, 0px);
+}
+
+:root:not([inFullscreen])[tabsintitlebar="true"]:not([extradragspace="true"]) #navigator-toolbox {
+    border-bottom: 0 !important;
+}
+:root:not([inFullscreen])[tabsintitlebar="true"]:not([extradragspace="true"])[sizemode="normal"] {
+    border-top: 0 !important;
+}
+
+/* Reverse direction of window controls and hide the close button in maximized windows */
+:root:not([sizemode="normal"]) {
+    --uc-window-control-width: 92px;    /* Space reserved for window controls */
+}
+:root:not([sizemode="normal"]):not([uidensity="compact"]) {
+    --uc-window-control-width: 96px;    /* Space reserved for window controls */
+}
+:root:not([inFullscreen])[tabsintitlebar="true"]:not([extradragspace="true"]) .titlebar-buttonbox,
+:root[inFullscreen][tabsintitlebar="true"]:not([extradragspace="true"]) #window-controls {
+	display: flex;
+	flex-direction: row-reverse;
+}
+:root:not([inFullscreen]):not([sizemode="normal"])[tabsintitlebar="true"]:not([extradragspace="true"]) .titlebar-close,
+:root[inFullscreen][tabsintitlebar="true"]:not([extradragspace="true"]) #window-controls #close-button {
+    display: none;
+}
+
+/* for use with a Min/Max/Close button - comment out if not using */
+:root {
+    --uc-window-control-width: 0px;    /* Space reserved for window controls */
+}
+:root:not([uidensity="compact"]) {
+    --uc-window-control-width: 0px;    /* Space reserved for window controls */
+}
+:root:not([sizemode="normal"]) {
+    --uc-window-control-width: 0px;    /* Space reserved for window controls */
+}
+:root:not([sizemode="normal"]):not([uidensity="compact"]) {
+    --uc-window-control-width: 0px;    /* Space reserved for window controls */
+}
+:root:not([inFullscreen])[tabsintitlebar="true"]:not([extradragspace="true"]) .titlebar-buttonbox {
+    display: none;
+}
+/* Move hamburger menu to the left */
+#PanelUI-button,
+#customization-panel-container,
+#customization-panelWrapper .panel-arrow {
+    -moz-box-ordinal-group: 0;
+}
+/*#nav-bar {
+	display: flex !important;
+	flex-direction: row-reverse !important;
+}*/

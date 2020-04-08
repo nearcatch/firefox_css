@@ -1,0 +1,10 @@
+@-moz-document url("moz-extension://2e37a839-2801-4f7e-99cc-939ac2b7582c/windows/manager.html") {
+    /* Hide donate button */
+    div#donate {
+        display: none;
+    }
+    section#toolbar {
+		/*background: url("chrome://global/skin/media/imagedoc-darknoise.png");*/
+		background: linear-gradient( to bottom, rgba(128, 128, 128, 0.1) 0%, rgba(0, 0, 0, 0) 100% );
+    }
+}
