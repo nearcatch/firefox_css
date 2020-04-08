@@ -1,9 +1,9 @@
 :root {
     --autohide-sidebar-width: 30px;
-    --autohide-sidebar-toolbar-height: calc(var(--uc-toolbar-height) + 8px); /* variable from hide_titlebar.css */
+    --autohide-sidebar-toolbar-height: calc(var(--uc-toolbar-height,32px) + 8px); /* variable from hide_titlebar.css */
 }
 :root[sizemode="normal"] {
-    --autohide-sidebar-toolbar-height: calc(var(--uc-toolbar-height) + 1px); /* variable from hide_titlebar.css */
+    --autohide-sidebar-toolbar-height: calc(var(--uc-toolbar-height,38px) + 1px); /* variable from hide_titlebar.css */
 }
 
 /* Tab Center Redux Auto-hiding Sidebar */
