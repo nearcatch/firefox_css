@@ -1,6 +1,12 @@
+/* Smaller search button paddings */
+.search-one-offs {
+    padding-top: 6px !important;
+    padding-bottom: 7px !important;
+}
+
 /* https://www.reddit.com/r/FirefoxCSS/comments/famrs0/blur_style_bookmarks_bar_autohide/ */
 .urlbarView {
-    background-image: url(images/noise-512x512.png) !important;
+    background-image: url("images/noise-512x512.png") !important;
     background-color: rgba(0,0,0,.75) !important;
     backdrop-filter: blur(32px) !important;
 }
