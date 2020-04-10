@@ -1,8 +1,8 @@
 /* Copyfish */
-:root:not([customizing]) toolbar[brighttext] #copyfish_a9t9_com-browser-action {
+/*:root:not([customizing]) toolbar[brighttext] #copyfish_a9t9_com-browser-action {
 	--webextension-toolbar-image-light: url("moz-extension://a12aae91-fd2e-4c7b-a3ca-9d9097737a35/images/icon-19_desktop.png") !important;
 }
-/*:root:not([customizing]) toolbar[brighttext] #copyfish_a9t9_com-browser-action {
+:root:not([customizing]) toolbar[brighttext] #copyfish_a9t9_com-browser-action {
 	list-style-image: none;
 }
 :root:not([customizing]) toolbar[brighttext] #copyfish_a9t9_com-browser-action::after {
@@ -24,7 +24,7 @@
     list-style-image: url("chrome://mozapps/skin/extensions/extensionGeneric.svg") !important;
 }
 #eom-button menuitem.restartless label:after {content:"🧩"!important;}
-#eom-button menuitem.enabling label:after {content:"☀"!important;}
+#eom-button menuitem.enabling label:after {content:"🌞"!important;}
 #eom-button menuitem.disabling label:after {content:"🌑"!important;}
 #eom-button menuitem.uninstalling label:after {content:"🧨"!important;}
 #eom-button menuitem label:after {font-style:normal;}
@@ -40,13 +40,13 @@
         list-style-image: url("chrome://branding/content/icon32.png") !important;
     }
 }
-#PanelUI-menu-button:not(:hover):not([open]) .toolbarbutton-icon {
+/*#PanelUI-menu-button:not(:hover):not([open]) .toolbarbutton-icon {
     filter: grayscale(100%) !important;
-}
-#PanelUI-menu-button[badge-status="update-available"] .toolbarbutton-badge,
-#PanelUI-menu-button[badge-status="update-manual"] .toolbarbutton-badge,
-#PanelUI-menu-button[badge-status="update-restart"] .toolbarbutton-badge {
-	box-shadow: 0 0 1px 1px var(--toolbar-bgcolor) !important;
+}*/
+#PanelUI-menu-button[badge-status="update-available"] .toolbarbutton-icon,
+#PanelUI-menu-button[badge-status="update-manual"] .toolbarbutton-icon,
+#PanelUI-menu-button[badge-status="update-restart"] .toolbarbutton-icon {
+	mask: radial-gradient(circle at calc(100% - 2px) 0px,rgba(0,0,0,0.070),rgba(0,0,0,0.070) 6px,#000 8px,#000);
 }
 	  
 /* Min-Max-Close */
