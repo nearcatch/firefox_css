@@ -1,6 +1,6 @@
 /* inspiration: https://www.reddit.com/r/FirefoxCSS/comments/dnggfj/color_your_url_bar_based_on_website_security_ff_70/ */
 #urlbar {
-    z-index: 1 !important;
+    z-index: 2 !important;
 }
 #urlbar-background {
     z-index: -2 !important;
@@ -54,11 +54,11 @@
 /* YELLOW/GREEN: https://mixed-script.badssl.com/ */
 #urlbar[pageproxystate='valid'] #identity-box.mixedActiveBlocked:after {--sec-color:goldenrod;--sec-color2:seagreen;}
 /* YELLOW/RED: https://mixed-script.badssl.com/ */
-#urlbar[pageproxystate='valid'] #identity-box.mixedActiveContent:after {--sec-color2:firebrick;--sec-color:goldenrod;}
+#urlbar[pageproxystate='valid'] #identity-box.mixedActiveContent:after {--sec-color:firebrick;--sec-color2:goldenrod;}
 /* YELLOW/RED: https://self-signed.badssl.com/ - warning page */
 #urlbar[pageproxystate='valid'] #identity-box.certErrorPage:after {--sec-color:goldenrod;--sec-color2:firebrick;}
 /* YELLOW/RED: https://self-signed.badssl.com/ - post-override page */
-#urlbar[pageproxystate='valid'] #identity-box.certUserOverridden:after {--sec-color2:firebrick;--sec-color:goldenrod;}
+#urlbar[pageproxystate='valid'] #identity-box.certUserOverridden:after {--sec-color:firebrick;--sec-color2:goldenrod;}
 /* YELLOW: Don't know an example for this */
 #urlbar[pageproxystate='valid'] #identity-box.weakCipher:after {--sec-color:goldenrod;}
 /* RED: http://http-login.badssl.com/ */
