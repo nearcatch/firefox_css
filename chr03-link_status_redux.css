@@ -1,3 +1,9 @@
 #main-window #statuspanel[type=overLink] {
-        display: none !important;
-    }
+    display: none;
+}
+#main-window #statuspanel #statuspanel-inner #statuspanel-label {
+	border-top-right-radius: 3px;
+}
+#main-window #statuspanel[mirror="true"] #statuspanel-inner #statuspanel-label {
+	border-top-left-radius: 3px;
+}
