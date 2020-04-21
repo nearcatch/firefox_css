@@ -41,12 +41,12 @@
     width: 79vw !important;
     max-width: calc(100vw - 416px) !important;
 }
-#urlbar {
+/*#urlbar {
     transition: width 120ms ease-in-out, top 120ms ease-in-out, left 120ms ease-in-out;
 }
 #urlbar > #urlbar-input-container {
     transition: height 120ms ease-in-out, padding 120ms ease-in-out;
-}
+}*/
 
 /* Reduce row paddings to make them more compact */
 .urlbarView-row {
